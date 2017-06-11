@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="LSM">
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapSwitch/test/za/co/mmagon/jwebswing/plugins/bootstrapswitch/BootstrapSwitchTest.java</file>
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapSwitch/src/za/co/mmagon/jwebswing/plugins/bootstrapswitch/BootstrapSwitch.java</file>
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapSwitch/test/za/co/mmagon/jwebswing/plugins/bootstrapswitch/BootstrapSwitchOptionsTest.java</file>
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapSwitch/src/za/co/mmagon/jwebswing/plugins/bootstrapswitch/BootstrapSwitchPageConfigurator.java</file>
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapSwitch/test/za/co/mmagon/jwebswing/plugins/bootstrapswitch/BootstrapSwitchFeatureTest.java</file>
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapSwitch/src/za/co/mmagon/jwebswing/plugins/bootstrapswitch/BootstrapSwitchFeature.java</file>
-        </group>
+        <group name="LSM"/>
     </open-files>
 </project-private>

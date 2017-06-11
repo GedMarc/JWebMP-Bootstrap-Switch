@@ -14,7 +14,7 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
 enum BootstrapSwitchReferencePool implements ReferencePool
 {
     BootstrapSwitch(new JavascriptReference("BootstrapSwitch", 3.3, "bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"),
-            new CSSReference("BootstrapSwitch", 3.3, "bower_components/bootstrap-select/switch/css/bootstrap-switch.css"));
+            new CSSReference("BootstrapSwitch", 3.3, "bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css"));
     /**
      * Any sub data
      */
