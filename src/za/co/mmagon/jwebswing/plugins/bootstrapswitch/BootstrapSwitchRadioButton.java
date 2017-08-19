@@ -49,11 +49,11 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
         super.preConfigure();
         if (!BootstrapPageConfigurator.isBootstrap4())
         {
-            getAttributesCustom().remove("form-control");
+            getAttributes().remove("form-control");
         }
         else if (BootstrapPageConfigurator.isBootstrap4())
         {
-            getAttributesCustom().remove("form-control");
+            getAttributes().remove("form-control");
         }
     }
 
