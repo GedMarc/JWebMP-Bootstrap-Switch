@@ -49,11 +49,11 @@ public class BootstrapSwitchCheckBox extends InputCheckBoxType<BootstrapSwitchCh
         super.preConfigure();
         if (!BootstrapPageConfigurator.isBootstrap4())
         {
-            getAttributes().remove("form-control");
+            getClasses().remove("form-control");
         }
         else if (BootstrapPageConfigurator.isBootstrap4())
         {
-            getAttributes().remove("form-control");
+            getClasses().add("form-control");
         }
     }
 
