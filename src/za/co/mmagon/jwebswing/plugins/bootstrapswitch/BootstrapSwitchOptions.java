@@ -19,7 +19,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
     /**
      * The checkbox size*
      */
-    private String size;
+    private BootstrapSwitchSizes size;
     /**
      * Animate the switch*
      */
@@ -117,7 +117,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
      *
      * @return
      */
-    public String getSize()
+    public BootstrapSwitchSizes getSize()
     {
         return size;
     }
@@ -129,7 +129,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
      *
      * @return
      */
-    public BootstrapSwitchOptions setSize(String size)
+    public BootstrapSwitchOptions setSize(BootstrapSwitchSizes size)
     {
         this.size = size;
         return this;

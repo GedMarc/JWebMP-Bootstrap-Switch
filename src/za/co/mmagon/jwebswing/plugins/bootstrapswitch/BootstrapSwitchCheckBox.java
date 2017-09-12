@@ -1,8 +1,8 @@
 package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
-import za.co.mmagon.jwebswing.base.html.InputCheckBoxType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
+import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormCheckInput;
 
 /**
  * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with the help of the community.
@@ -12,7 +12,8 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
  */
 @ComponentInformation(name = "Bootstrap Switch Check Box", description = "Turn checkboxes    and radio buttons    into toggle switches  ",
         url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
-public class BootstrapSwitchCheckBox extends InputCheckBoxType<BootstrapSwitchCheckBox>
+public class BootstrapSwitchCheckBox
+		extends BSFormCheckInput<BootstrapSwitchCheckBox>
 {
 
     private static final long serialVersionUID = 1L;
