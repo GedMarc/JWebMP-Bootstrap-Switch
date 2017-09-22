@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-		"bootstrap-switch": "*"
+    "bootstrap-switch": "*"
   }
 }

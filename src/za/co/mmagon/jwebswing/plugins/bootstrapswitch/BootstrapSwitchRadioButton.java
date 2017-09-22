@@ -11,69 +11,69 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
  * @since 09 Jun 2017
  */
 @ComponentInformation(name = "Bootstrap Switch Radio Button", description = "Turn checkboxes    and radio buttons    into toggle switches  ",
-        url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
+		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
 public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRadioButton>
 {
-
-    private static final long serialVersionUID = 1L;
-    /**
-     * The feature for this select
-     */
-    private BootstrapSwitchFeature feature;
-
-    /*
-     * Constructs a new BootstrapSwitch
-     */
-    public BootstrapSwitchRadioButton()
-    {
-        addFeature(getFeature());
-    }
-
-    /**
-     * Returns the feature for this component
-     *
-     * @return
-     */
-    public BootstrapSwitchFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new BootstrapSwitchFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public void preConfigure()
-    {
-        super.preConfigure();
-        if (!BootstrapPageConfigurator.isBootstrap4())
-        {
-            getAttributes().remove("form-control");
-        }
-        else if (BootstrapPageConfigurator.isBootstrap4())
-        {
-            getAttributes().remove("form-control");
-        }
-    }
-
-    /**
-     * Sets the feature for this bootstrap drop down
-     *
-     * @param feature
-     *
-     * @return
-     */
-    public BootstrapSwitchRadioButton setFeature(BootstrapSwitchFeature feature)
-    {
-        this.feature = feature;
-        return this;
-    }
-
-    @Override
-    public BootstrapSwitchOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	/**
+	 * The feature for this select
+	 */
+	private BootstrapSwitchFeature feature;
+	
+	/*
+	 * Constructs a new BootstrapSwitch
+	 */
+	public BootstrapSwitchRadioButton()
+	{
+		addFeature(getFeature());
+	}
+	
+	/**
+	 * Returns the feature for this component
+	 *
+	 * @return
+	 */
+	public BootstrapSwitchFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new BootstrapSwitchFeature(this);
+		}
+		return feature;
+	}
+	
+	/**
+	 * Sets the feature for this bootstrap drop down
+	 *
+	 * @param feature
+	 *
+	 * @return
+	 */
+	public BootstrapSwitchRadioButton setFeature(BootstrapSwitchFeature feature)
+	{
+		this.feature = feature;
+		return this;
+	}
+	
+	@Override
+	public void preConfigure()
+	{
+		super.preConfigure();
+		if (!BootstrapPageConfigurator.isBootstrap4())
+		{
+			getAttributes().remove("form-control");
+		}
+		else if (BootstrapPageConfigurator.isBootstrap4())
+		{
+			getAttributes().remove("form-control");
+		}
+	}
+	
+	@Override
+	public BootstrapSwitchOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
 }
