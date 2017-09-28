@@ -1,5 +1,6 @@
 package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
+import za.co.mmagon.jwebswing.base.html.Input;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
@@ -84,9 +85,8 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	/**
 	 * Builds a new switch options
 	 */
-	public BootstrapSwitchOptions()
+	public BootstrapSwitchOptions(Input checkbox)
 	{
-		//Nothing Needed
 	}
 	
 	/**
@@ -479,5 +479,4 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.wrapperClass = wrapperClass;
 		return this;
 	}
-	
 }

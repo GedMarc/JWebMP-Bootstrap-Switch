@@ -28,6 +28,7 @@ public class BootstrapSwitchCheckBox
 	public BootstrapSwitchCheckBox()
 	{
 		addFeature(getFeature());
+		setChecked(true);
 	}
 	
 	/**

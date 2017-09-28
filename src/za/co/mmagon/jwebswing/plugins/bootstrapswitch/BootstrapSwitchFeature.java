@@ -1,7 +1,7 @@
 package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
 import za.co.mmagon.jwebswing.Feature;
-import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
+import za.co.mmagon.jwebswing.base.html.Input;
 
 /**
  * Creates toast messages
@@ -17,10 +17,19 @@ public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, Boot
 	/*
 	 * Constructs a new BootstrapSwitchFeature
 	 */
-	public BootstrapSwitchFeature(ComponentHierarchyBase component)
+	public BootstrapSwitchFeature(BootstrapSwitchCheckBox component)
 	{
 		super("BootstrapSelectFeature", component);
 	}
+	
+	/*
+	 * Constructs a new BootstrapSwitchFeature
+	 */
+	public BootstrapSwitchFeature(BootstrapSwitchRadioButton component)
+	{
+		super("BootstrapSelectFeature", component);
+	}
+	
 	
 	@Override
 	protected void assignFunctionsToComponent()
@@ -38,7 +47,7 @@ public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, Boot
 	{
 		if (super.getOptions() == null)
 		{
-			setOptions(new BootstrapSwitchOptions());
+			setOptions(new BootstrapSwitchOptions((Input) getComponent()));
 		}
 		return super.getOptions();
 	}
