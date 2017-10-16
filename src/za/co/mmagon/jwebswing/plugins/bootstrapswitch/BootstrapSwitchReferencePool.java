@@ -30,14 +30,6 @@ enum BootstrapSwitchReferencePool implements ReferencePool
 	
 	}
 	
-	/**
-	 * A new AngularSlimScrollReferencePool with data
-	 */
-	BootstrapSwitchReferencePool(String data)
-	{
-	
-	}
-	
 	BootstrapSwitchReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;

@@ -2,7 +2,10 @@ package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
+import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSComponentFormGroupOptions;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormCheckInput;
+
+import java.util.Objects;
 
 /**
  * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with the help of the community.
@@ -64,11 +67,11 @@ public class BootstrapSwitchCheckBox
 		super.preConfigure();
 		if (!BootstrapPageConfigurator.isBootstrap4())
 		{
-			getClasses().remove("form-control");
+			getClasses().remove(BSComponentFormGroupOptions.Form_Control);
 		}
 		else if (BootstrapPageConfigurator.isBootstrap4())
 		{
-			getClasses().add("form-control");
+			getClasses().add(BSComponentFormGroupOptions.Form_Control);
 		}
 	}
 	
@@ -78,4 +81,28 @@ public class BootstrapSwitchCheckBox
 		return getFeature().getOptions();
 	}
 	
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof BootstrapSwitchCheckBox))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+		BootstrapSwitchCheckBox that = (BootstrapSwitchCheckBox) o;
+		return Objects.equals(getFeature(), that.getFeature());
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
 }
