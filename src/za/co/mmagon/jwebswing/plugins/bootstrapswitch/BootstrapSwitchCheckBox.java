@@ -67,7 +67,7 @@ public class BootstrapSwitchCheckBox
 		super.preConfigure();
 		if (!BootstrapPageConfigurator.isBootstrap4())
 		{
-			getClasses().remove(BSComponentFormGroupOptions.Form_Control);
+			getClasses().remove(BSComponentFormGroupOptions.Form_Control.toString());
 		}
 		else if (BootstrapPageConfigurator.isBootstrap4())
 		{
