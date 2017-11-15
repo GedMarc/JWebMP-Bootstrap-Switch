@@ -62,6 +62,7 @@ public class BootstrapSwitchCheckBox
 	}
 	
 	@Override
+	@SuppressWarnings("unchecked")
 	public void preConfigure()
 	{
 		super.preConfigure();
