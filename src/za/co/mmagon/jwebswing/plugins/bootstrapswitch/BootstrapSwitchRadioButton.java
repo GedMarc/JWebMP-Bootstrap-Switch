@@ -17,13 +17,13 @@ import java.util.Objects;
 		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
 public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRadioButton>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The feature for this select
 	 */
 	private BootstrapSwitchFeature feature;
-	
+
 	/*
 	 * Constructs a new BootstrapSwitch
 	 */
@@ -31,7 +31,7 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 	{
 		addFeature(getFeature());
 	}
-	
+
 	/**
 	 * Returns the feature for this component
 	 *
@@ -45,7 +45,7 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 		}
 		return feature;
 	}
-	
+
 	/**
 	 * Sets the feature for this bootstrap drop down
 	 *
@@ -58,27 +58,27 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 		this.feature = feature;
 		return this;
 	}
-	
+
 	@Override
 	public void preConfigure()
 	{
 		super.preConfigure();
 		if (!BootstrapPageConfigurator.isBootstrap4())
 		{
-			getAttributes().remove(BSComponentFormGroupOptions.Form_Control);
+			getAttributes().remove(BSComponentFormGroupOptions.Form_Control.toString());
 		}
 		else if (BootstrapPageConfigurator.isBootstrap4())
 		{
-			getAttributes().remove(BSComponentFormGroupOptions.Form_Control);
+			getAttributes().remove(BSComponentFormGroupOptions.Form_Control.toString());
 		}
 	}
-	
+
 	@Override
 	public BootstrapSwitchOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
@@ -97,7 +97,7 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 		BootstrapSwitchRadioButton that = (BootstrapSwitchRadioButton) o;
 		return Objects.equals(getFeature(), that.getFeature());
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
