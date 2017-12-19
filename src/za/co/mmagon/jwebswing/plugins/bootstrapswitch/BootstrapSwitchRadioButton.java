@@ -2,7 +2,6 @@ package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
 import za.co.mmagon.jwebswing.base.html.InputRadioType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSComponentFormGroupOptions;
 
 import java.util.Objects;
@@ -63,14 +62,7 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 	public void preConfigure()
 	{
 		super.preConfigure();
-		if (!BootstrapPageConfigurator.isBootstrap4())
-		{
-			getAttributes().remove(BSComponentFormGroupOptions.Form_Control.toString());
-		}
-		else if (BootstrapPageConfigurator.isBootstrap4())
-		{
-			getAttributes().remove(BSComponentFormGroupOptions.Form_Control.toString());
-		}
+		getAttributes().remove(BSComponentFormGroupOptions.Form_Control.toString());
 	}
 
 	@Override

@@ -1,7 +1,6 @@
 package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSComponentFormGroupOptions;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormCheckInput;
 
@@ -18,13 +17,13 @@ import java.util.Objects;
 public class BootstrapSwitchCheckBox
 		extends BSFormCheckInput<BootstrapSwitchCheckBox>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The feature for this select
 	 */
 	private BootstrapSwitchFeature feature;
-	
+
 	/*
 	 * Constructs a new BootstrapSwitchCheckBox
 	 */
@@ -33,7 +32,7 @@ public class BootstrapSwitchCheckBox
 		addFeature(getFeature());
 		setChecked(true);
 	}
-	
+
 	/**
 	 * Returns the feature for this component
 	 *
@@ -47,7 +46,7 @@ public class BootstrapSwitchCheckBox
 		}
 		return feature;
 	}
-	
+
 	/**
 	 * Sets the feature for this bootstrap drop down
 	 *
@@ -60,28 +59,22 @@ public class BootstrapSwitchCheckBox
 		this.feature = feature;
 		return this;
 	}
-	
+
 	@Override
 	@SuppressWarnings("unchecked")
 	public void preConfigure()
 	{
 		super.preConfigure();
-		if (!BootstrapPageConfigurator.isBootstrap4())
-		{
-			getClasses().remove(BSComponentFormGroupOptions.Form_Control.toString());
-		}
-		else if (BootstrapPageConfigurator.isBootstrap4())
-		{
-			getClasses().add(BSComponentFormGroupOptions.Form_Control);
-		}
+		getClasses().add(BSComponentFormGroupOptions.Form_Control);
+
 	}
-	
+
 	@Override
 	public BootstrapSwitchOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
@@ -100,7 +93,7 @@ public class BootstrapSwitchCheckBox
 		BootstrapSwitchCheckBox that = (BootstrapSwitchCheckBox) o;
 		return Objects.equals(getFeature(), that.getFeature());
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
