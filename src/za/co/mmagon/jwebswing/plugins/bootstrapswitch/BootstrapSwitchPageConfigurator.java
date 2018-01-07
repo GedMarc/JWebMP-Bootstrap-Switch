@@ -28,9 +28,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 )
 class BootstrapSwitchPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new BootstrapSwitchPageConfigurator
 	 */
@@ -38,13 +38,13 @@ class BootstrapSwitchPageConfigurator extends PageConfigurator
 	{
 		//Nothing needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
+			JQueryPageConfigurator.setRequired(true);
 			BootstrapPageConfigurator.setRequired(page.getBody(), true);
 			page.getBody().addJavaScriptReference(BootstrapSwitchReferencePool.BootstrapSwitch.getJavaScriptReference());
 			page.getBody().addCssReference(BootstrapSwitchReferencePool.BootstrapSwitch.getCssReference());

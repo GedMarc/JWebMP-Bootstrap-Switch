@@ -3,6 +3,8 @@ package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.Input;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+
 /**
  * Creates toast messages
  *
@@ -11,9 +13,9 @@ import za.co.mmagon.jwebswing.base.html.Input;
  */
 public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, BootstrapSwitchFeature>
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new BootstrapSwitchFeature
 	 */
@@ -21,7 +23,7 @@ public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, Boot
 	{
 		super("BootstrapSelectFeature", component);
 	}
-	
+
 	/*
 	 * Constructs a new BootstrapSwitchFeature
 	 */
@@ -29,14 +31,14 @@ public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, Boot
 	{
 		super("BootstrapSelectFeature", component);
 	}
-	
-	
+
+
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "bootstrapSwitch(" + getOptions() + ");" + getNewLine());
+		addQuery(getComponent().getJQueryID() + "bootstrapSwitch(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
 	}
-	
+
 	/**
 	 * Returns the options
 	 *
@@ -51,5 +53,5 @@ public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, Boot
 		}
 		return super.getOptions();
 	}
-	
+
 }
