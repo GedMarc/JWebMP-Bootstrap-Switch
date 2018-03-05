@@ -1,20 +1,23 @@
 package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
-import za.co.mmagon.jwebswing.base.html.InputRadioType;
+import za.co.mmagon.jwebswing.base.html.inputs.InputRadioType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSComponentFormGroupOptions;
 
 import java.util.Objects;
 
 /**
- * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with the help of the community.
+ * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with
+ * the help of the community.
  *
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Bootstrap Switch Radio Button", description = "Turn checkboxes    and radio buttons    into toggle switches  ",
+@ComponentInformation(name = "Bootstrap Switch Radio Button",
+		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
-public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRadioButton>
+public class BootstrapSwitchRadioButton
+		extends InputRadioType<BootstrapSwitchRadioButton>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -66,12 +69,6 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 	}
 
 	@Override
-	public BootstrapSwitchOptions getOptions()
-	{
-		return getFeature().getOptions();
-	}
-
-	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -94,5 +91,11 @@ public class BootstrapSwitchRadioButton extends InputRadioType<BootstrapSwitchRa
 	public int hashCode()
 	{
 		return Objects.hash(super.hashCode(), getFeature());
+	}
+
+	@Override
+	public BootstrapSwitchOptions getOptions()
+	{
+		return getFeature().getOptions();
 	}
 }
