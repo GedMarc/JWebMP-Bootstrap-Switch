@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
+package com.jwebmp.plugins.bootstrapswitch;
 
 public enum BootstrapSwitchSizes
 {

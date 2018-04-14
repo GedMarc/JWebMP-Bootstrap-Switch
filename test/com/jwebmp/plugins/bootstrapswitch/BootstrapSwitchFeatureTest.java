@@ -1,23 +1,25 @@
-package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
+package com.jwebmp.plugins.bootstrapswitch;
 
+import com.jwebmp.BaseTestClass;
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.jwebswing.BaseTestClass;
 
 /**
  * @author Marc Magon
  */
-public class BootstrapSwitchFeatureTest extends BaseTestClass
+public class BootstrapSwitchFeatureTest
+		extends BaseTestClass
 {
-	
+
 	public BootstrapSwitchFeatureTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{
 		BootstrapSwitchFeature bsf = new BootstrapSwitchFeature(new BootstrapSwitchRadioButton());
-		bsf.getOptions().setBaseClass("fa fa-bell-o");
+		bsf.getOptions()
+		   .setBaseClass("fa fa-bell-o");
 		System.out.println(bsf.renderJavascript());
 	}
 }

@@ -1,7 +1,7 @@
-package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
+package com.jwebmp.plugins.bootstrapswitch;
 
-import za.co.mmagon.jwebswing.base.html.Input;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.base.html.Input;
+import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * All the options available for Bootstrap Switch
@@ -9,9 +9,10 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class BootstrapSwitchOptions extends JavaScriptPart
+public class BootstrapSwitchOptions
+		extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The checkbox state*
@@ -81,14 +82,14 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	 * Container element class(es)*
 	 */
 	private Integer wrapperClass;
-	
+
 	/**
 	 * Builds a new switch options
 	 */
 	public BootstrapSwitchOptions(Input checkbox)
 	{
 	}
-	
+
 	/**
 	 * The checkbox state
 	 *
@@ -98,7 +99,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return state;
 	}
-	
+
 	/**
 	 * The checkbox state
 	 *
@@ -111,7 +112,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.state = state;
 		return this;
 	}
-	
+
 	/**
 	 * The checkbox size
 	 *
@@ -121,7 +122,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return size;
 	}
-	
+
 	/**
 	 * The checkbox size
 	 *
@@ -134,7 +135,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.size = size;
 		return this;
 	}
-	
+
 	/**
 	 * Animate the switch
 	 *
@@ -144,7 +145,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return animate;
 	}
-	
+
 	/**
 	 * Animate the switch
 	 *
@@ -157,7 +158,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.animate = animate;
 		return this;
 	}
-	
+
 	/**
 	 * Disable state
 	 *
@@ -167,7 +168,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return disabled;
 	}
-	
+
 	/**
 	 * Disable state
 	 *
@@ -180,7 +181,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.disabled = disabled;
 		return this;
 	}
-	
+
 	/**
 	 * Readonly state
 	 *
@@ -190,7 +191,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return readonly;
 	}
-	
+
 	/**
 	 * Readonly state
 	 *
@@ -203,7 +204,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.readonly = readonly;
 		return this;
 	}
-	
+
 	/**
 	 * Indeterminate state
 	 *
@@ -213,7 +214,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return indeterminate;
 	}
-	
+
 	/**
 	 * Indeterminate state
 	 *
@@ -226,7 +227,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.indeterminate = indeterminate;
 		return this;
 	}
-	
+
 	/**
 	 * Inverse switch direction
 	 *
@@ -236,7 +237,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return inverse;
 	}
-	
+
 	/**
 	 * Inverse switch direction
 	 *
@@ -249,7 +250,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.inverse = inverse;
 		return this;
 	}
-	
+
 	/**
 	 * Allow this radio button to be unchecked by the user
 	 *
@@ -259,7 +260,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return radioAllOff;
 	}
-	
+
 	/**
 	 * Allow this radio button to be unchecked by the user
 	 *
@@ -272,7 +273,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.radioAllOff = radioAllOff;
 		return this;
 	}
-	
+
 	/**
 	 * Color of the left side of the switch
 	 *
@@ -282,7 +283,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return onColor;
 	}
-	
+
 	/**
 	 * Color of the left side of the switch
 	 *
@@ -295,7 +296,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.onColor = onColor;
 		return this;
 	}
-	
+
 	/**
 	 * Color of the right side of the switch
 	 *
@@ -305,7 +306,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return offColor;
 	}
-	
+
 	/**
 	 * Color of the right side of the switch
 	 *
@@ -318,7 +319,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.offColor = offColor;
 		return this;
 	}
-	
+
 	/**
 	 * Text of the left side of the switch
 	 *
@@ -328,7 +329,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return onText;
 	}
-	
+
 	/**
 	 * Text of the left side of the switch
 	 *
@@ -341,7 +342,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.onText = onText;
 		return this;
 	}
-	
+
 	/**
 	 * Text of the right side of the switch
 	 *
@@ -351,7 +352,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return offText;
 	}
-	
+
 	/**
 	 * Text of the right side of the switch
 	 *
@@ -364,7 +365,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.offText = offText;
 		return this;
 	}
-	
+
 	/**
 	 * Text of the center handle of the switch
 	 *
@@ -374,7 +375,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return labelText;
 	}
-	
+
 	/**
 	 * Text of the center handle of the switch
 	 *
@@ -387,7 +388,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.labelText = labelText;
 		return this;
 	}
-	
+
 	/**
 	 * Width of the left and right sides in pixels
 	 *
@@ -397,7 +398,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return handleWidth;
 	}
-	
+
 	/**
 	 * Width of the left and right sides in pixels
 	 *
@@ -410,7 +411,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.handleWidth = handleWidth;
 		return this;
 	}
-	
+
 	/**
 	 * Width of the center handle in pixels
 	 *
@@ -420,7 +421,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return labelWidth;
 	}
-	
+
 	/**
 	 * Width of the center handle in pixels
 	 *
@@ -433,7 +434,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.labelWidth = labelWidth;
 		return this;
 	}
-	
+
 	/**
 	 * Global class prefix
 	 *
@@ -443,7 +444,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return baseClass;
 	}
-	
+
 	/**
 	 * Global class prefix
 	 *
@@ -456,7 +457,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 		this.baseClass = baseClass;
 		return this;
 	}
-	
+
 	/**
 	 * Container element class(es)
 	 *
@@ -466,7 +467,7 @@ public class BootstrapSwitchOptions extends JavaScriptPart
 	{
 		return wrapperClass;
 	}
-	
+
 	/**
 	 * Container element class(es)
 	 *

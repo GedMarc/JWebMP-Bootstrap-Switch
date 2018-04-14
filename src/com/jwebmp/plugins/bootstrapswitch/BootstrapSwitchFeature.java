@@ -1,9 +1,9 @@
-package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
+package com.jwebmp.plugins.bootstrapswitch;
 
-import za.co.mmagon.jwebswing.Feature;
-import za.co.mmagon.jwebswing.base.html.Input;
+import com.jwebmp.Feature;
+import com.jwebmp.base.html.Input;
 
-import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+import static com.jwebmp.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
 
 /**
  * Creates toast messages
@@ -11,7 +11,8 @@ import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRAC
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class BootstrapSwitchFeature extends Feature<BootstrapSwitchOptions, BootstrapSwitchFeature>
+public class BootstrapSwitchFeature
+		extends Feature<BootstrapSwitchOptions, BootstrapSwitchFeature>
 {
 
 	private static final long serialVersionUID = 1L;
