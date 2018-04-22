@@ -1,13 +1,12 @@
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.BaseTestClass;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
  */
 public class BootstrapSwitchFeatureTest
-		extends BaseTestClass
+
 {
 
 	public BootstrapSwitchFeatureTest()

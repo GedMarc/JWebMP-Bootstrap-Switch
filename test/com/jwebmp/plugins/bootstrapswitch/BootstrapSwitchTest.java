@@ -17,7 +17,6 @@
 
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import com.jwebmp.plugins.bootstrap.forms.BSForm;
 import org.junit.jupiter.api.Test;
@@ -26,7 +25,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class BootstrapSwitchTest
-		extends BaseTestClass
+
 {
 
 	public BootstrapSwitchTest()
@@ -91,7 +90,7 @@ public class BootstrapSwitchTest
 	@Test
 	public void testHtml()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		BSForm form = new BSForm();
 		BootstrapSwitchCheckBox bs = new BootstrapSwitchCheckBox();
 		p.getOptions()
