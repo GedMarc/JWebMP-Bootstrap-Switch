@@ -86,12 +86,6 @@ public class BootstrapSwitchRadioButton
 	}
 
 	@Override
-	public int hashCode()
-	{
-		return Objects.hash(super.hashCode(), getFeature());
-	}
-
-	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -108,6 +102,12 @@ public class BootstrapSwitchRadioButton
 		}
 		BootstrapSwitchRadioButton that = (BootstrapSwitchRadioButton) o;
 		return Objects.equals(getFeature(), that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
 	}
 
 	@Override

@@ -29,7 +29,8 @@ import java.util.Objects;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Bootstrap Switch Check Box", description = "Turn checkboxes    and radio buttons    into toggle switches  ",
+@ComponentInformation(name = "Bootstrap Switch Check Box",
+		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
 public class BootstrapSwitchCheckBox
 		extends BSFormCheckInput<BootstrapSwitchCheckBox>
@@ -93,12 +94,6 @@ public class BootstrapSwitchCheckBox
 	}
 
 	@Override
-	public int hashCode()
-	{
-		return Objects.hash(super.hashCode(), getFeature());
-	}
-
-	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -115,5 +110,11 @@ public class BootstrapSwitchCheckBox
 		}
 		BootstrapSwitchCheckBox that = (BootstrapSwitchCheckBox) o;
 		return Objects.equals(getFeature(), that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
 	}
 }

@@ -11,7 +11,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum BootstrapSwitchReferencePool implements ReferencePool
+enum BootstrapSwitchReferencePool
+		implements ReferencePool
 {
 	BootstrapSwitch(new JavascriptReference("BootstrapSwitch", 3.3, "bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"),
 	                new CSSReference("BootstrapSwitch", 3.3, "bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css"));
@@ -45,18 +46,6 @@ enum BootstrapSwitchReferencePool implements ReferencePool
 	}
 
 	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
-	}
-
-	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
@@ -66,6 +55,18 @@ enum BootstrapSwitchReferencePool implements ReferencePool
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
+	}
+
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
 	}
 
 	/**

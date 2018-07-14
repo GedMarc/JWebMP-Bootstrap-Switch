@@ -3,7 +3,7 @@ package com.jwebmp.plugins.bootstrapswitch;
 import com.jwebmp.Feature;
 import com.jwebmp.base.html.Input;
 
-import static com.jwebmp.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+import static com.jwebmp.utilities.StaticStrings.*;
 
 /**
  * Creates toast messages
@@ -32,7 +32,6 @@ public class BootstrapSwitchFeature
 	{
 		super("BootstrapSelectFeature", component);
 	}
-
 
 	@Override
 	protected void assignFunctionsToComponent()
