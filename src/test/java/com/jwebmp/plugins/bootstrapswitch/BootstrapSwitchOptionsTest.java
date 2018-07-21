@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.base.html.Input;
+import com.jwebmp.core.base.html.Input;
 import org.junit.jupiter.api.Test;
 
 /**

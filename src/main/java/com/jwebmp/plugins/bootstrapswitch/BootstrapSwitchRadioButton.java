@@ -17,8 +17,8 @@
 
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.base.html.inputs.InputRadioType;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.inputs.InputRadioType;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.bootstrap.forms.groups.BSComponentFormGroupOptions;
 
 import java.util.Objects;

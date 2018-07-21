@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import com.jwebmp.plugins.bootstrap.forms.BSForm;
 import org.junit.jupiter.api.Test;
 

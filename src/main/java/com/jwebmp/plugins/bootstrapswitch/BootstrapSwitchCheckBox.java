@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.bootstrap.forms.groups.BSComponentFormGroupOptions;
 import com.jwebmp.plugins.bootstrap.forms.groups.sets.BSFormCheckInput;
 

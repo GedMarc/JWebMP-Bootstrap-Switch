@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.base.html.Input;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * All the options available for Bootstrap Switch

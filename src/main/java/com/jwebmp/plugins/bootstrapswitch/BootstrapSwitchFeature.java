@@ -1,9 +1,9 @@
 package com.jwebmp.plugins.bootstrapswitch;
 
-import com.jwebmp.Feature;
-import com.jwebmp.base.html.Input;
+import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.html.Input;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * Creates toast messages
