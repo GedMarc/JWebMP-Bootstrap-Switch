@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.bootstrapswitch.BootstrapSwitchPageConfigurator;
+
 module com.jwebmp.plugins.bootstrapswitch {
 	exports com.jwebmp.plugins.bootstrapswitch;
 
@@ -6,4 +9,7 @@ module com.jwebmp.plugins.bootstrapswitch {
 	requires com.fasterxml.jackson.annotation;
 
 	requires com.jwebmp.plugins.bootstrap;
+
+	provides IPageConfigurator with BootstrapSwitchPageConfigurator;
+
 }
