@@ -12,4 +12,5 @@ module com.jwebmp.plugins.bootstrapswitch {
 
 	provides IPageConfigurator with BootstrapSwitchPageConfigurator;
 
+	opens com.jwebmp.plugins.bootstrapswitch to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
