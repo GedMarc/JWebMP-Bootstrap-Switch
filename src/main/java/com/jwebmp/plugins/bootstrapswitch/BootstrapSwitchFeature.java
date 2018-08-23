@@ -2,6 +2,7 @@ package com.jwebmp.plugins.bootstrapswitch;
 
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
@@ -12,7 +13,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 09 Jun 2017
  */
 public class BootstrapSwitchFeature
-		extends Feature<BootstrapSwitchOptions, BootstrapSwitchFeature>
+		extends Feature<GlobalFeatures, BootstrapSwitchOptions, BootstrapSwitchFeature>
 {
 
 	private static final long serialVersionUID = 1L;
