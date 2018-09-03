@@ -9,8 +9,9 @@ module com.jwebmp.plugins.bootstrapswitch {
 	requires com.fasterxml.jackson.annotation;
 
 	requires com.jwebmp.plugins.bootstrap;
+	requires java.validation;
 
 	provides IPageConfigurator with BootstrapSwitchPageConfigurator;
 
-	opens com.jwebmp.plugins.bootstrapswitch to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.bootstrapswitch to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
