@@ -37,14 +37,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "toggle, radio button, checkbox, bootstrap, ui,web ui, framework",
 		pluginSubtitle = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		pluginSourceUrl = "https://github.com/Bttstrp/bootstrap-switch/",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Bootstrap-Switch/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Bootstrap-Switch",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://bootstrapswitch.com/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapSwitch.jar/download")
 public class BootstrapSwitchPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<BootstrapSwitchPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled

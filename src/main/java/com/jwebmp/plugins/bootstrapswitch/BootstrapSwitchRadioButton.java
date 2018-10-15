@@ -32,7 +32,7 @@ import java.util.Objects;
  */
 @ComponentInformation(name = "Bootstrap Switch Radio Button",
 		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
-		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
+		url = "https://github.com/GedMarc/JWebMP-Bootstrap-Switch")
 public class BootstrapSwitchRadioButton
 		extends InputRadioType<BootstrapSwitchRadioButton>
 {
@@ -86,6 +86,12 @@ public class BootstrapSwitchRadioButton
 	}
 
 	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -102,12 +108,6 @@ public class BootstrapSwitchRadioButton
 		}
 		BootstrapSwitchRadioButton that = (BootstrapSwitchRadioButton) o;
 		return Objects.equals(getFeature(), that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return Objects.hash(super.hashCode(), getFeature());
 	}
 
 	@Override
