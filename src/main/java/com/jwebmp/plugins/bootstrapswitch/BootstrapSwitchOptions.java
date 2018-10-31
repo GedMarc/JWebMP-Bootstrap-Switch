@@ -13,7 +13,7 @@ public class BootstrapSwitchOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The checkbox state*
 	 */

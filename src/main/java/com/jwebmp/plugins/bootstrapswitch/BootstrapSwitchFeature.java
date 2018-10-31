@@ -16,7 +16,6 @@ public class BootstrapSwitchFeature
 		extends Feature<GlobalFeatures, BootstrapSwitchOptions, BootstrapSwitchFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new BootstrapSwitchFeature

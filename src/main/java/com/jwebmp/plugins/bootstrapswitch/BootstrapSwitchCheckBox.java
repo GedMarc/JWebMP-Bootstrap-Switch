@@ -36,7 +36,7 @@ public class BootstrapSwitchCheckBox
 		extends BSFormCheckInput<BootstrapSwitchCheckBox>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The feature for this select
 	 */
@@ -94,6 +94,12 @@ public class BootstrapSwitchCheckBox
 	}
 
 	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -110,11 +116,5 @@ public class BootstrapSwitchCheckBox
 		}
 		BootstrapSwitchCheckBox that = (BootstrapSwitchCheckBox) o;
 		return Objects.equals(getFeature(), that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return Objects.hash(super.hashCode(), getFeature());
 	}
 }

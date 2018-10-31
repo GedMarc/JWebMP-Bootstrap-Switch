@@ -37,7 +37,7 @@ public class BootstrapSwitchRadioButton
 		extends InputRadioType<BootstrapSwitchRadioButton>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The feature for this select
 	 */
