@@ -6,7 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options available for Bootstrap Switch
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 09 Jun 2017
  */
 public class BootstrapSwitchOptions

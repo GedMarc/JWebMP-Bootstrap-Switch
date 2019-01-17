@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ import java.util.Objects;
  * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with
  * the help of the community.
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 09 Jun 2017
  */
 @ComponentInformation(name = "Bootstrap Switch Radio Button",

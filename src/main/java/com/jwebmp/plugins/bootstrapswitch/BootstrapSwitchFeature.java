@@ -9,7 +9,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 /**
  * Creates toast messages
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 09 Jun 2017
  */
 public class BootstrapSwitchFeature
